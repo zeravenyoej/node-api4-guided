@@ -1,22 +1,23 @@
-const db = require('../data/db.js');
+const db = require("../data/config")
 
 module.exports = {
-  find,
-  add,
-};
-
-function find() {
-  return db('shouts');
+	find,
+	findById,
+	add,
 }
 
-function add(shout) {
-  return db('shouts')
-    .insert(shout, 'id')
-    .then(([id]) => findById(id));
+function find() {
+	return db("shouts")
 }
 
 function findById(id) {
-  return db('shouts')
-    .where({ id })
-    .first();
+	return db("shouts")
+		.where({ id })
+		.first()
+}
+
+function add(shout) {
+	return db("shouts")
+		.insert(shout, "id")
+		.then(([id]) => findById(id))
 }

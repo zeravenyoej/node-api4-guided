@@ -1,12 +1,12 @@
-# Web API Deployment Challenge
+# Node API 4 Guided Project
 
-Guided project for **Web API IV** module.
+Guided project for **Node API 4** module.
 
 In this project we will learn how to deploy a Web API to `heroku`.
 
 ## Prerequisites
 
-- Sign up for a [heroku](https://www.heroku.com/) free account.
+- Sign up for a free account on [Heroku](https://www.heroku.com/).
 
 ## Instructions
 
