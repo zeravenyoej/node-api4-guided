@@ -1,3 +1,6 @@
+//require("dotenv").config()
+//Above is a an optional way of having the project read the
+//dotenv, but an alternative is being used in the scripts watch in the package.json
 const express = require("express")
 const helmet = require("helmet")
 const welcomeRouter = require("./welcome/welcome-router")
